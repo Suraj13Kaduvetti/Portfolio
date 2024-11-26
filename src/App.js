@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+/*import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -22,4 +22,41 @@ function App() {
   );
 }
 
+export default App;*/
+
+import React from 'react';
+import './App.css';
+import Navbar from './components/Navbar';
+import Header from './components/Header';
+import Summary from './components/Summary';
+import Education from './components/Education';
+import Skills from './components/Skills';
+import CoursesAndCertifications from './components/CoursesAndCertifications';
+import Projects from './components/Projects';
+import Hobbies from './components/Hobbies';
+import ContactInfo from './components/ContactInfo';
+
+const App = () => {
+  return (
+    <div className="App">
+      <Navbar />
+      <Header id="header" />
+      <Summary id="summary" />
+      <Education id="education" />
+      <Skills id="skills" />
+      <CoursesAndCertifications id="courses" />
+      <Projects id="projects" />
+      <Hobbies id="hobbies" />
+      <ContactInfo id="contact-info" />
+    </div>
+  );
+};
+
 export default App;
+
+
+
+
+
+
+
